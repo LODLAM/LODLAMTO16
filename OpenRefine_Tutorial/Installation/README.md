@@ -1,6 +1,6 @@
 # LODLAM Workshop: Metadata Cleaning Portion Installation Instructions
-## Required Preparation
-This workshop will primarily work with **OpenRefine** with the **DERI RDF Extension** or **LODRefine** (Linked Open Data OpenRefine) installed. OpenRefine requires Java (see note in OpenRefine Installation instructions) and a web browser to run in (**Not Internet Explorer**).
+## Optional Preparation
+This tutorial will primarily work with **OpenRefine** with the **DERI RDF Extension** or **LODRefine** (Linked Open Data OpenRefine) installed. OpenRefine requires Java (see note in OpenRefine Installation instructions) and a web browser to run in (**Not Internet Explorer**).
 
 #### OpenRefine Installation Choices:
 
@@ -18,7 +18,7 @@ There is [1 installation test](OpenRefineInstallationTest.md) to make sure you a
 #### RDF Editors
 
 #### Python Reconciliation Service
-Additionally, if you want to perform the local reconciliation parts of the workshop (and because we'll be working with conference wi-fi, if you want to do local reconciliation *this is recommended*), please install and/or setup on your computer **Python** (>=2.7) and **Pip** (or other Python package manager). 
+Additionally, if you want to perform the local reconciliation parts of the workshop (and because we'll be working with conference wi-fi, if you want to do local reconciliation *this is recommended*), please install and/or setup on your computer **Python** (>=2.7). 
 
 #### Linked Data Fragments Server
 We might work with **Linked Data Fragments** local servers in one of the clinic sessions, which will involve other installation requirements. This is entirely optional, obviously, but look this over at least if you're interested in learning more about working with that technology (along with **Heroku** if you'd like to push a LDF server to the web).

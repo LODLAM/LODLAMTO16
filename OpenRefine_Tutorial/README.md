@@ -4,6 +4,8 @@
 [Christina Harlow (Cornell University)](http://www.twitter.com/cm_harlow)
 cmh329@cornell.edu
 
+**This repo is a draft and being worked on. A finalized version for review by participants will be made available at least 3 weeks before the workshop.**
+
 ##Abstract
 This interactive tutorial will walk you through taking existing metadata, enhancing it, then producing it as RDF. We will use OpenRefine, an open source tool for working with data, and the DERI RDF Extension for OpenRefine, to walk through this work. A little bit of time will be given to the data normalization features of OpenRefine - faceting, Clustering, GREL (Google Refine Expression Language). However, the real focus will be on how to leverage existing and produce your own RDF data. Reconciliation of entities with external SPARQL Endpoints and RDF datasets, along with RDF mapping and production, will be covered in depth. Participants are strongly encouraged to install OpenRefine and follow along.
 
