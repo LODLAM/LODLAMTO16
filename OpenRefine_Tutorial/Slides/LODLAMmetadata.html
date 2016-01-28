@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="OpenRefine, LODRefine, linked open data, reconciliation, metadata" />
+    <meta name="description" content="Cleaning and publishing metadata: hands on tutorial with OpenRefine" />
+    <title>Cleaning and publishing metadata: hands on tutorial with OpenRefine</title>
+    <script src="./js/remark-0.6.0.min.js" type="text/javascript"></script>
+    <style type="text/css">
+      @font-face {
+        font-family: 'Cutive Mono';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Cutive Mono'), url(./fonts/Cutive_Mono.woff2) format('woff2');
+      }
+      @font-face {
+        font-family: 'Yanone Kaffeesatz';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Yanone Kaffeesatz'), url(./fonts/Yanone_Kaffeesatz.woff) format('woff');
+      }
+      body {
+        font-family: 'Cutive Mono';
+        font-size: 30px;
+        color: #2F302D;
+      }
+      h1, h2, h3 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: 400;
+        margin-bottom: 0;
+      }
+      h1 { font-size: 3.5em; color: #193466; }
+      h2 { font-size: 2.5em; color: #193466; }
+      h3 { font-size: 1.75em; color: #193466; }
+      small { font-size: 0.5em; }
+      .footnote {
+        position: absolute;
+        bottom: 3em;
+      }
+      li p { line-height: 1.25em; }
+      .red { color: #fa0000; }
+      .large { font-size: 2em; }
+      a, a > code {
+        color: #4183c4;
+        text-decoration: none;
+      }
+      img {
+      max-width: 800px;
+      max-height: 600px;
+      }
+      code {
+        -moz-border-radius: 5px;
+        -web-border-radius: 5px;
+        background: #e7e8e2;
+        border-radius: 5px;
+        font-size: 16px;
+      }
+      .pull-left {
+        float: left;
+        width: 47%;
+      }
+      .pull-right {
+        float: right;
+        width: 47%;
+      }
+      .pull-right ~ p {
+        clear: both;
+      }
+      #slideshow .slide .content code {
+        font-size: 0.8em;
+      }
+      #slideshow .slide .content pre code {
+        font-size: 0.9em;
+        padding: 15px;
+      }
+      .inverse {
+        background: #272822;
+        color: #777872;
+        /*text-shadow: 0 0 20px #333;*/
+      }
+      .inverse h1, .inverse h2 {
+        color: #f3f3f3;
+        line-height: 0.8em;
+      }
+
+      /* Slide-specific styling */
+      #slide-inverse .footnote {
+        bottom: 12px;
+        left: 20px;
+      }
+      #slide-how .slides {
+        font-size: 0.9em;
+        position: absolute;
+        top:  151px;
+        right: 140px;
+      }
+      #slide-how .slides h3 {
+        margin-top: 0.2em;
+      }
+      #slide-how .slides .first, #slide-how .slides .second {
+        padding: 1px 20px;
+        height: 90px;
+        width: 120px;
+        -moz-box-shadow: 0 0 10px #777;
+        -webkit-box-shadow: 0 0 10px #777;
+        box-shadow: 0 0 10px #777;
+      }
+      #slide-how .slides .first {
+        background: #fff;
+        position: absolute;
+        top: 20%;
+        left: 20%;
+        z-index: 1;
+      }
+      #slide-how .slides .second {
+        position: relative;
+        background: #fff;
+        z-index: 0;
+      }
+
+      /* Two-column layout */
+      .left-column {
+        color: #777;
+        width: 20%;
+        height: 92%;
+        float: left;
+      }
+        .left-column h2:last-of-type, .left-column h3:last-child {
+          color: #000;
+        }
+      .right-column {
+        width: 75%;
+        float: right;
+        padding-top: 2em;
+      }
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+class: center middle
+#Going from Theory to Practice:
+###Preparing + Leveraging LOD with OpenRefine
+**Christina Harlow, @cm_harlow**
+
+**LODLAM Toronto 2016**
+
+---
+class: center middle
+## Slides, Examples, + Install
+
+https://github.com/LODLAM/LODLAMTO16
+
+---
+class: center middle
+## Quick Installation Backup
+
+Want to follow along, but don't have OpenRefine installed?
+
+Go to Installation instructions &amp; follow RefinePro options.
+
+---
+class: middle
+## Agenda/Method
+
+1. Introduction
+2. Importing Data
+3. Data Munging
+4. Reconciliation
+5. Mapping, Exporting
+6. Wrap-up
+
+---
+class: middle
+## Quick Introduction
+
+1. Introduction &lt;==
+2. Importing Data
+3. Data Munging
+4. Reconciliation
+5. Mapping, Exporting
+6. Wrap-up
+
+---
+class: center middle
+## Learning LOD by Working with LOD
+
+Goal: Learn Linked Open Data by working with it in context of Libraries, Archives, &amp; Museums metadata
+
+Help: Raise Hand, Ask Friend, Check Instructions, Check online
+
+---
+class: center middle
+## Let's All Left-shark It
+
+![Left-sharking](img/left-shark2.jpg "Left-sharking")
+
+---
+class: middle
+## But Also...
+
+"Hacker School Rules"
+
+- No feigning surprise
+- No well-actually's
+- No back-seat driving
+- No subtle -isms
+
+<small>https://www.recurse.com/manual</small>
+
+---
+class: middle
+## Quick Intro to OpenRefine
+
+  * OpenRefine = power data tool
+  * Since 2012, community-sourced
+  * OpenRefine.org
+  * github.com/OpenRefine/Openrefine
+  * Java (&amp; Jetty) tool that runs locally
+  * GUI runs in your chosen browser (NOT INTERNET EXPLORER)
+
+---
+class: middle
+## OpenRefine &amp; RDF
+
+  * Native support for importing RDF/XML, RDF Ntriples
+  * Original Freebase Extension
+  * DERI RDF Extension, LODRefine
+    * RDF Document Reconciliation
+    * RDF Skeleton, Mapping
+    * RDF Export: RDF/XML, RDF Turtle
+
+---
+class: center middle
+## DERI RDF Extension &amp; LODRefine
+###No longer actively supported
+Each annoyance re:slowness, bugs = 1
+
+If reaches 30, we promise to learn Java + become LODRefine committers
+
+---
+class: middle
+## Not Just Producing RDF...
+
+Using RDF data &amp; tools like OpenRefine = better entity matching
+
+Possible Influences:
+
+  * [VIVO Recon Service](https://wiki.duraspace.org/display/VIVO/Extending+Google+Refine+for+VIVO)
+  * [Nomenklatura](http://nomenklatura.okfnlabs.org/)
+  * [Ecco!](https://linkedjazz.org/tools/ecco/)
+  * Karma
+
+---
+class: middle
+## Importing Data
+
+1. Introduction
+2. Importing Data &lt;==
+3. Data Munging
+4. Reconciliation
+5. Mapping, Exporting
+6. Wrap-up
+
+---
+class: middle
+## Importing Data
+
+2 'tracks' for this workshop:
+
+1. Import sample DC/XML metadata to make into RDF (taken directly from a Fedora 3 to Fedora 4 migration project)
+3. Import your own data &amp; DIY it
+
+---
+class: middle
+## Import data into OpenRefine
+
+1. Start up OpenRefine or LODRefine
+2. Click on Create Project Tab
+3. Click on Web Addresses (URLs)
+4. Enter the URL for GitHub Raw Object of Starter Dataset you want to use
+
+(Or download/save your metadata to working environment &amp; use 'This Computer')
+
+---
+class: middle
+## Import data into OpenRefine
+
+5. Preview your data as project
+6. Change settings as needed
+  * XML, Json: need to choose 'record' object
+  * CSV, Excel: review for header rows
+  * RDF: Preview options for loading
+7. Once ready, give name, Create Project
+
+---
+class: middle
+## Viewing OpenRefine Project
+* Saved Automatically with Undo / Redo Panel
+* Rows/Records divide = VERY IMPORTANT
+* Extensions, Export Options in Top Right Corner
+* Facet, Filter panel on left
+* If something freezes, refresh the browser (gahhhh)
+
+---
+class: middle
+## Import Your Data
+
+Go ahead and import the data for the track you'd like to pursue. Explore the possible options.
+
+Bonus: Once your main project is created, export one of the sample RDF documents to see how it looks as an OpenRefine project. This differs from what the DERI extension expects.
+
+---
+class: middle
+## Data Munging
+
+1. Introduction
+2. Importing Data
+3. Data Munging &lt;==
+4. Reconciliation
+5. Mapping, Exporting
+6. Wrap-up
+
+---
+class: middle
+## Metadata Munging in OpenRefine
+Ways to Normalize, Remediate Data:
+
+* Join, Split Rows
+* Splitting, Renaming Columns
+* Faceting, Clustering, Filtering
+* Google Refine Expression Language (GREL)
+
+<small>https://github.com/OpenRefine/OpenRefine/wiki</small>
+
+---
+class: middle
+## Prepare Your Data
+
+* Get columns renamed as needed
+* Get cells joined
+* Facet, review
+* Facet, cluster, normalize
+* Filter to target, map values to new fields
+
+---
+class: middle
+## Reconciliation
+
+1. Introduction
+2. Importing Data
+3. Data Munging
+4. Reconciliation &lt;==
+5. Mapping, Exporting
+6. Wrap-up
+
+---
+
+class: center middle
+## OpenRefine Reconciliation
+
+Reconciliation broadly: Compare values in my dataset with values in an external dataset, if deemed a match, link and pull in external datapoint information
+
+---
+class: middle
+## Add column by fetching URL...
+* HTTP requests to external data API in UI
+* takes far longer to pull data
+* requires parsing returned data with GREL
+
+---
+class: middle
+## Standard Recon Service API
+* RESTful API between OpenRefine and external data
+* handles JSON reconciliation objects btwn datasource API + Openrefine
+
+---
+class: middle
+## DERI RDF Extension
+* no longer actively supported
+* Standard Recon Service API to work with RDF, SPARQL endpoints
+* RDF docs held in memory
+* SPARQL recon dependent on SPARQL server details
+
+---
+class: middle
+## Reconciliation Demos
+* [LCSH via SPARQL](http://freeyourmetadata.org/reconciliation/)
+* [Languages via RDF Doc](../Instructions/Reconciliation/deriRDFexample.md)
+* [Geonames via Recon Service](https://github.com/cmh2166/geonames-reconcile)
+* [VIAF hosted service](http://refine.codefork.com/)
+
+---
+class: middle
+## OpenRefine Recon
+
+1. Run Recon according to your choosing - see options in Recon instructions
+2. Pull URIs for a particular field
+3. Pull other information helpful for your projects
+4. Make sure to pull in URIs, information
+
+---
+class: middle
+## Mapping &amp; Exporting RDF
+
+1. Introduction
+2. Importing Data
+3. Data Munging
+4. Reconciliation
+5. Mapping, Exporting &lt;==
+6. Wrap-up
+
+---
+class: middle
+## DERI RDF Creation
+
+RDF Extension button > Edit RDF Skeleton...
+
+* Add Namespaces/Utilize Namespaces
+* Can assign types, create blank nodes
+* Preview the Output
+* Save your skeleton
+* Export > RDF...
+
+---
+class: middle
+## Map &amp; Export
+
+Map your data to RDF using the RDF skeleton, preview the Turtle, then export when you're ready.
+
+Bonus: Export your doc then use for a test RDF Doc reconcile.
+
+---
+class: middle
+## Wrap-Up
+
+1. Introduction
+2. Importing Data
+3. Data Munging
+4. Reconciliation
+5. Mapping, Exporting
+6. Wrap-up &lt;==
+
+---
+class: middle center
+## Links + Contact
+
+cmharlow@gmail.com
+
+http://openrefine.org/
+
+http://github.com/openrefine/openrefine
+
+@openrefine, @cm_harlow
+
+
+    </textarea>
+    <div id="slideshow"></div>
+    <script type="text/javascript">
+        var slideshow = remark.create({
+            highlightLanguage: 'no-highlight',
+            highlightStyle: 'zenburn',
+        });
+    </script>
+  </body>
+</html>
