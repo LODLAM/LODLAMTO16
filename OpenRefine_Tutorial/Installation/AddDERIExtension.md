@@ -5,7 +5,7 @@ You already have or just installed OpenRefine (possibly still labeled Google Ref
 **Note: If you installed LODRefine, or are using RefinePro, YOU DO NOT NEED THIS STEP.**
 
 1. Find where your OpenRefine installation is on your computer. If you're not sure:
-    2. Start OpenRefine however you normally do (click on the diamond icon or the exectuable file).
+    2. Start OpenRefine however you normally do (click on the diamond icon or the executable file).
     3. In the OpenRefine start screen, click on the 'Browse workspace directory' link in the bottom left corner (see below, is same for Google Refine, OpenRefine, or LODRefine):
     ![LODRefine Browse Workspace Directory link location](../Images/OpenRefine_BrowseWorkspace.png "LODRefine Browse Workspace Directory link location")
     4. This should the file directory where your installation of OpenRefine is located on your computer. If there isn't already a subdirectory named 'extensions', create it. Note where this is located.
