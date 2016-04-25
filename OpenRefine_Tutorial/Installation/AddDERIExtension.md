@@ -10,7 +10,7 @@ You already have or just installed OpenRefine (possibly still labeled Google Ref
     ![LODRefine Browse Workspace Directory link location](../Images/OpenRefine_BrowseWorkspace.png "LODRefine Browse Workspace Directory link location")
     4. This should the file directory where your installation of OpenRefine is located on your computer. If there isn't already a subdirectory named 'extensions', create it. Note where this is located.
     2. Shut down OpenRefine.
-2. Download the DERI RDF Extension v.0.8.0 from [here](http://refine.deri.ie/) to your computer, then move to the OpenRefine 'extensions' sub-directory you just created. Unzip the file.
+2. Download the DERI RDF Extension v.0.8.0 from [here (note this link automatically downloads a ZIP file)](https://github.com/fadmaa/grefine-rdf-extension/archive/master.zip) to your computer, then move to the OpenRefine 'extensions' sub-directory you just created. Unzip the file.
 3. Restart OpenRefine however you normally do. The RDF options button should now show up in the top right corner when you look at an OpenRefine project (see below):
 ![LODRefine Project RDF Extension List Location](../Images/OpenRefine_RDFbutton.png "LODRefine Project RDF Extension List Location")
 4. Next step: Go to the ['Test your install' section](OpenRefineInstallationTest.md) and make sure you're ready to go.
