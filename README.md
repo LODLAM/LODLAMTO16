@@ -1,7 +1,7 @@
 # LODLAMTO16
 LODLAM Toronto 2016: http://www.library.yorku.ca/lodlamto/
 
-##Draft Schedule
+##[Schedule](http://www.library.yorku.ca/lodlamto/schedule/)
 ###Day 1 Workshops – Ryerson University
 Date/Time | Track 1 | Track 2
 --- | --- | ---
