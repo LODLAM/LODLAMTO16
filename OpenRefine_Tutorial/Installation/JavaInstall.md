@@ -31,5 +31,6 @@ http://java.com
 You may need to let your computer know where Java is installed (otherwise, commands like ‘java -version’ won't work). You do this by setting the ‘JAVA_HOME’ variable, then putting this variable in your ‘PATH’.
 
 To do that last bit, check out these resources:
+
 - [Brief instructions](https://docs.oracle.com/cd/E19182-01/820-7851/inst_cli_jdk_javahome_t/)
 - [Windows-specific directions](https://confluence.atlassian.com/doc/setting-the-java_home-variable-in-windows-8895.html)
