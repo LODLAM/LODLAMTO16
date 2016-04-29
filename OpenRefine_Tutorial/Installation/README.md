@@ -4,15 +4,14 @@ This tutorial will primarily work with **OpenRefine** with the **DERI RDF Extens
 
 #### OpenRefine Installation Choices:
 
-1. [Already have OpenRefine or Google Refine Installed, just need to install DERI RDF Extension](AddDERIExtension.md)
-2. [Already have LODRefine or OpenRefine with the DERI RDF Extension installed, just need to test it](OpenRefineInstallationTest.md)
-3. [Don't have OpenRefine or LODRefine installed yet, or want to try a web-based version available thanks to RefinePro](OpenRefineInstallation.md)
+1. [Don't have OpenRefine or LODRefine installed yet, or want to try a web-based version available thanks to RefinePro](OpenRefineInstallation.md)
+2. [Already have OpenRefine or Google Refine Installed, just need to install DERI RDF Extension](AddDERIExtension.md)
+3. [Already have LODRefine or OpenRefine with the DERI RDF Extension installed, just need to test it](OpenRefineInstallationTest.md)
 
 #### Test Your OpenRefine Installation Choice
 There is [1 installation test](OpenRefineInstallationTest.md) to make sure you are ready to go on workshop day.
 
 ## Optional Preparation
-
 [The Optional Preparation document has information on some things you might consider setting up for this workshop, including](OptionalPrep.md):
 
 #### RDF Editors
