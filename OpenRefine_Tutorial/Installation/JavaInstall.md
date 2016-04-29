@@ -17,7 +17,7 @@
 
 Generally, Java versions 1.7 or 1.8 will work.
 
-Mac and Linux machines will need to have Java 6 or 7 installed. If you have Java 8, and don't want to mess with Java 6 or 7, try grabbing LODRefine from GitHub and running via your command line interface of choice first, this sometimes is a work-around.
+Mac and Linux machines will need to have Java 6 or 7 installed. If you have Java 8, and don't want to mess with Java 6 or 7, try grabbing LODRefine from GitHub and running via your command line interface of choice first. This sometimes is a viable work-around.
 
 ### Install Java
 If you don’t have Java installed, you can download and install from:
@@ -32,3 +32,11 @@ To do that last bit, check out these resources:
 
 - [Brief instructions](https://docs.oracle.com/cd/E19182-01/820-7851/inst_cli_jdk_javahome_t/)
 - [Windows-specific directions](https://confluence.atlassian.com/doc/setting-the-java_home-variable-in-windows-8895.html)
+
+---
+
+Questions? Get in touch with [Christina](mailto:cmharlow@gmail.com).
+
+[Back to the OpenRefine Installation](OpenRefineInstallation.md)
+
+[Back to the LODLAM Workshop Agenda](https://github.com/LODLAM/LODLAMTO16)
