@@ -20,7 +20,7 @@ Please have OpenRefine with the DERI RDF Extension *OR* LODRefine installed *OR*
     3. Moving to Fedora 4, PCDM
     4. Descriptive Metadata Application Profile
     5. High Level Overview
-3. Import Data
+3. Import Data (Briefly)
     3. CSV, Google Sheets
     4. JSON, XML
     5. RDF/XML, RDF Ntriples
@@ -28,10 +28,10 @@ Please have OpenRefine with the DERI RDF Extension *OR* LODRefine installed *OR*
     4. Faceting, Clustering
     5. GREL
 5. Reconciliation
-    5. Add a column/hit APIs
-    6. Standard Reconciliation Services
-    7. SPARQL Reconciliation
-    8. RDF Reconciliation
+    5. Add a column/hit APIs (demo)
+    6. Standard Reconciliation Services - LCNAF
+    7. SPARQL Reconciliation - LCSH
+    8. RDF Reconciliation - Languages
     10. Capturing URIs
 6. Mapping to RDF
     6. Creating an RDF skeleton
@@ -41,22 +41,21 @@ Please have OpenRefine with the DERI RDF Extension *OR* LODRefine installed *OR*
 7. Questions + Comments (also can ask through out workshop)
 
 ##Tutorial Project
-Follow along with the tutorial project. By the end, we won't have *perfect* or *complete* RDF metadata, but we'll know how to get there (or how to improve our metadata regardless).
+Follow along with the tutorial project. You're also welcome to bring your own data & follow along working on that. By the end, we won't have *perfect* or *complete* RDF metadata, but we'll know how to get there (or how to improve our metadata regardless).
 
-- Import sample DC/XML metadata (pulled from real life Fedora 3 to 4 migration) to make into RDF, Modeling with PCDM
+**Project:** Import sample DC/XML metadata (pulled from real life Fedora 3 to 4 migration) to make into RDF, Modeling with PCDM
     - Heartache of importing XML
     - Cleaning, Normalizing terms
     - Mapping to columns that will become predicates
     - Pulling in URIs for certain fields through Reconciliation API
     - Mapping our tabular data to RDF
     - Exporting RDF
-- You're also welcome to bring your own data & follow along working on that
 
 ##Contents of this Directory
 - Slides
 - Installation Instructions
 - Procedures Documentation
-- Sample Data, Projects
+- Sample/Starter Data, Projects
 
 ##Community Notes
 Feel free to add notes from the session here, if so moved (just submit a pull request and I'll merge).
