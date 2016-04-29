@@ -14,12 +14,12 @@ This versions works more slowly, but comes with a packaged installer/icon.
         7. Change the "Allow applications downloaded from:" setting to "Anywhere"
         8. You should be able to able to open OpenRefine now.
     3. **For Linux:** Download, extract, then type ./refine to start.
-4. Once you've got OpenRefine installed and running on your machine, you need to now install the DERI RDF Extension: [Install the DERI RDF Extension](AddDERIExtension.md)
+4. Once you've got OpenRefine installed and running on your machine, you need to now install the DERI RDF Extension: [Install the DERI RDF Extension](../AddDERIExtension.md)
 
 ---
 
 Questions? Get in touch with [Christina](mailto:cmharlow@gmail.com).
 
-[Back to the OpenRefine Installation](OpenRefineInstallation.md)
+[Back to the OpenRefine Installation](../OpenRefineInstallation.md)
 
 [Back to the LODLAM Workshop Agenda](https://github.com/LODLAM/LODLAMTO16)
