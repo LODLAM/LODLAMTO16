@@ -2,6 +2,14 @@
 ##Installing OpenRefine or LODRefine
 Don't have OpenRefine or LODRefine installed? No worries! We'll get you set up.
 
+###Community Help
+Here are some resources and groups that can help with OpenRefine installation issues:
+
+1. Owen Stephens' *Installing OpenRefine* [Recording](https://summit.uwaterloo.ca/p389l6kkluv/) and [Slides](http://www.mashcat.info/wp-content/uploads/2016/01/Installing-OpenRefine.pptx)
+2. [OpenRefine 2.6 Official Installation Instructions](https://github.com/OpenRefine/OpenRefine/wiki/Installation-Instructions)
+3. [OpenRefine Google Group](https://groups.google.com/forum/#!forum/openrefine
+)
+
 ###Java Requirements
 OpenRefine is built in Java. You will need “Java SE Runtime Environment” (or JRE) installed - or check that you have the right version installed. *Generally*, 1.7 or 1.8 works.
 
@@ -10,11 +18,9 @@ Follow the [Java Requirement Check and Install instructions here](JavaInstall.md
 ###Get OpenRefine or LODRefine
 There are 3 options for getting what you need onto your computer. Just choose 1. All methods get you an installation of OpenRefine or LODRefine ready for the workshop.
 
-**Option 1:** Keep the installation simple (no command lines), and you'll be using OpenRefine for other work.
-
-**Option 2:** Clone a GitHub repository and run LODRefine via command line interface, which can help with debugging. No extensions installation required.
-
-**Option 3:** Don't install anything and take your chances with a cloud-hosted version over conference wifi.
+1. **Option:** Keep the installation simple (no command lines).
+2. **Option:** Clone a GitHub repository and run LODRefine via command line interface, which can help with debugging. No extensions installation required.
+3. **Option:** Don't install anything and take your chances with a cloud-hosted version over conference wifi.
 
 ---
 
@@ -57,8 +63,6 @@ Alternatively, you can install LODRefine (a version of OpenRefine 2.5 with the D
 
 ####Option 3: RefinePro Cloud-Hosted Option
 If you want to try a cloud-based version and see if it works for you instead of going through installation instructions above, you can get a free month trial to RefinePro. Follow these steps then make sure it works before calling it quits:
-
-**Note, I'm working very closely with the RefinePro developer to get this option working for the workshop, but it is still a bit buggy as of 10/21. If you register and run into errors, get in touch with [me](mailto:cmharlow@gmail.com).**
 
 1. Go to [the RefinePro site](https://app.refinepro.com/register/) and register.
 2. On that registration page, for the 'Community' portion, choose 'LODLAM'. This will get you an instance of OpenRefine with the DERI RDF Extension installed.
