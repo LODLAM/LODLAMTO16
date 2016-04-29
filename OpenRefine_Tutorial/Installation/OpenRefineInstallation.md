@@ -37,7 +37,7 @@ Alternatively, you can install LODRefine (a version of OpenRefine 2.5 with the D
 
 1. Clone or download LODRefine:
     2. From GitHub, clone the master branch of this repository: https://github.com/sparkica/LODRefine
-    3. From Sourceforge, download the most recent version of LODRefine: http://sourceforge.net/projects/lodrefine/postdownload?source=dlp
+    3. From Sourceforge, download the most recent version of LODRefine: https://sourceforge.net/projects/lodrefine/
 3. Move LODRefine to wherever on your computer you'd like to run it from. I usually keep these sorts of applications in a directory call 'Tools'.
 4. Change into that LODRefine directory in some kind of command line interface or client (e.g. Terminal on Mac, Command Prompt in Windows,...), and start LODRefine by typing:
     6. On Mac/Linux:
