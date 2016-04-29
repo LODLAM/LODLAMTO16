@@ -18,9 +18,9 @@ Follow the [Java Requirement Check and Install instructions here](JavaInstall.md
 ###Get OpenRefine or LODRefine
 There are 3 options for getting what you need onto your computer. Just choose 1. All methods get you an installation of OpenRefine or LODRefine ready for the workshop.
 
-1. (**Option:** Keep the installation simple (no command lines).)[InstallOptions/Option1.md]
-2. (**Option:** Clone a GitHub repository and run LODRefine via command line interface, which can help with debugging. No extensions installation required.)[InstallOptions/Option2.md]
-3. (**Option:** Don't install anything and take your chances with a cloud-hosted version over conference wifi.)[InstallOptions/Option3.md]
+1. [**Option:** Keep the installation simple (no command lines).](InstallOptions/Option1.md)
+2. [**Option:** Clone a GitHub repository and run LODRefine via command line interface, which can help with debugging. No extensions installation required.](InstallOptions/Option2.md)
+3. [**Option:** Don't install anything and take your chances with a cloud-hosted version over conference wifi.](InstallOptions/Option3.md)
 
 ---
 
