@@ -8,6 +8,8 @@
     - Linux: Open a terminal window
 2. Type “java -version”
 3. You should see something similar to this:
+
+
     ```
     java -version
     java version "1.7.0_11"
