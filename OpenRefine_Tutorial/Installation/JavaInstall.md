@@ -2,7 +2,6 @@
 ## Java requirements
 
 ### Check Your Java Version
-
 1. Check if you have JRE already installed:
     - [Windows: Open a command (cmd) prompt](http://windows.microsoft.com/en-gb/windows-vista/open-a-command-prompt-window)
     - [Mac: Open a terminal window](https://www.youtube.com/watch?v=zw7Nd67_aFw)
@@ -21,13 +20,12 @@ Generally, Java versions 1.7 or 1.8 will work.
 Mac and Linux machines will need to have Java 6 or 7 installed. If you have Java 8, and don't want to mess with Java 6 or 7, try grabbing LODRefine from GitHub and running via your command line interface of choice first, this sometimes is a work-around.
 
 ### Install Java
-
 If you don’t have Java installed, you can download and install from:
 http://java.com
 
 ### Troubleshooting Java Installation
-
 **Java Install Path**
+
 You may need to let your computer know where Java is installed (otherwise, commands like ‘java -version’ won't work). You do this by setting the ‘JAVA_HOME’ variable, then putting this variable in your ‘PATH’.
 
 To do that last bit, check out these resources:
