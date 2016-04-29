@@ -24,7 +24,7 @@ There are 3 options for getting what you need onto your computer. Just choose 1.
 
 ---
 
-Questions? Get in touch with [Christina](mailto:cmharlow@gmail.com).
+Questions? Get in touch with [Christina](mailto:cmh329@cornell.edu).
 
 [Back to the Metadata Cleaning Agenda](../)
 

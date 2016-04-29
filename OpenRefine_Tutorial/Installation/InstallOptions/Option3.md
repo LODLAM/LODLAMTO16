@@ -16,7 +16,7 @@ If you want to try a cloud-based version, you can get a free month trial to Refi
 
 ---
 
-Questions? Get in touch with [Christina](mailto:cmharlow@gmail.com).
+Questions? Get in touch with [Christina](mailto:cmh329@cornell.edu).
 
 [Back to the OpenRefine Installation](../OpenRefineInstallation.md)
 

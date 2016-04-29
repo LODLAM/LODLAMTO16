@@ -24,7 +24,7 @@ Alternatively, you can install LODRefine (a version of OpenRefine 2.5 with the D
 
 ---
 
-Questions? Get in touch with [Christina](mailto:cmharlow@gmail.com).
+Questions? Get in touch with [Christina](mailto:cmh329@cornell.edu).
 
 [Back to the OpenRefine Installation](../OpenRefineInstallation.md)
 

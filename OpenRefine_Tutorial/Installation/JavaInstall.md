@@ -39,7 +39,7 @@ Mac and Linux machines will need to have Java 6 or 7 installed. If you have Java
 
 ---
 
-Questions? Get in touch with [Christina](mailto:cmharlow@gmail.com).
+Questions? Get in touch with [Christina](mailto:cmh329@cornell.edu).
 
 [Back to the OpenRefine Installation](OpenRefineInstallation.md)
 
