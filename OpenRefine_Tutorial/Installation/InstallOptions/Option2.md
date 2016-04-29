@@ -5,8 +5,8 @@
 Alternatively, you can install LODRefine (a version of OpenRefine 2.5 with the DERI RDF extension among others already installed) by downloading or git cloning LODRefine locally.
 
 1. Clone or download LODRefine:
-    2. From GitHub, clone the master branch of this (repository)[https://github.com/sparkica/LODRefine]
-    3. From Sourceforge, (download the most recent version of LODRefine with an installer)[https://sourceforge.net/projects/lodrefine/]
+    2. From GitHub, clone the master branch of this [repository](https://github.com/sparkica/LODRefine)
+    3. From Sourceforge, [download the most recent version of LODRefine with an installer](https://sourceforge.net/projects/lodrefine/)
 3. Move LODRefine to wherever on your computer you'd like to run it from.
 4. Change into that LODRefine directory in some kind of command line interface or client (e.g. Terminal on Mac, Command Prompt in Windows,...), and start LODRefine by typing:
     6. On Mac/Linux:
