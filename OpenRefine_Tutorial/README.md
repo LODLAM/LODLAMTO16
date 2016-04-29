@@ -8,7 +8,7 @@
 This interactive tutorial will walk you through taking existing metadata, enhancing it, then producing it as RDF. We will use OpenRefine, an open source tool for working with data, and the DERI RDF Extension for OpenRefine, to walk through this work. A little bit of time will be given to the data normalization features of OpenRefine - faceting, Clustering, GREL (Google Refine Expression Language). However, the real focus will be on how to leverage existing and produce your own RDF data. Reconciliation of entities with external SPARQL Endpoints and RDF datasets, along with RDF mapping and production, will be covered in depth. Participants are strongly encouraged to install OpenRefine and follow along.
 
 ##Workshop Requirements
-Please have OpenRefine and the DERI RDF Extension or LODRefine installed before the start of the workshop if you wish to participate in hands-on work. Instructions for installation are available at [Installation](Installation/README.md). If you run into any issues with installation, please get in touch with [me](mailto:cmh329@cornell.edu) as soon as you are able.
+Please have OpenRefine with the DERI RDF Extension *OR* LODRefine installed *OR* access to a RefinePro LODLAM instance before the start of the workshop if you wish to participate in hands-on work. Instructions for installation are available at [Installation](Installation/README.md). If you run into any issues with installation, please get in touch with [me](mailto:cmh329@cornell.edu) as soon as you are able.
 
 ##Agenda
 1. Introduction to OpenRefine: Both Utilizing & Producing RDF
