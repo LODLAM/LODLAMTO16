@@ -26,6 +26,6 @@ Alternatively, you can install LODRefine (a version of OpenRefine 2.5 with the D
 
 Questions? Get in touch with [Christina](mailto:cmh329@cornell.edu).
 
-[Back to the OpenRefine Installation](../OpenRefineInstallation.md)
+[Back to the Installation Page](../OpenRefineInstallation.md)
 
-[Back to the LODLAM Workshop Agenda](https://github.com/LODLAM/LODLAMTO16)
+[Back to the LODLAM Toronto Agenda](https://github.com/LODLAM/LODLAMTO16)

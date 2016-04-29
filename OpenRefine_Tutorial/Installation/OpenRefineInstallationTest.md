@@ -3,7 +3,7 @@
 To make sure you're ready to go for the LODLAM metadata cleaning portion of the day, perform the following steps:
 
 1. Start OpenRefine/LODRefine however you normally do (either by clicking the Diamond logo where you've stashed OpenRefine, or using the refine command in a Command Line Interface or client).
-2. If OpenRefine in a browser window doesn't pop up for you automatically, go to http://127.0.0.1:3333 in your web browser of choice (**not Internet Explorer**). 
+2. If OpenRefine in a browser window doesn't pop up for you automatically, go to http://127.0.0.1:3333 in your web browser of choice (**not Internet Explorer**).
 3. Go to 'Create Project' > 'Clipboard'. Copy and paste in the following:
     ```
     Apples
@@ -43,22 +43,23 @@ To make sure you're ready to go for the LODLAM metadata cleaning portion of the 
 ![Google Refine Calling up LCSH Service](../Images/GoogleRefineCallingLCSH.png "Google Refine Calling up LCSH Service")
 
 19. What should appears it the following, with skos:Concept checked.
-    20. If this doesn't appear for you (instead it says something like 'no types found'), try checking "Reconcile against no particular type" instead and seeing if that works for you. 
-21. Click 'Start Reconciling'. 
+21. Click 'Start Reconciling'.
 ![Google Refine Reconciling against LCSH](../Images/GoogleRefineLCSHrecon.png "Google Refine Reconciling against LCSH")
 
 22. You should now have a yellow box telling you the Reconciliation is working. If you are running a version of LODRefine started via a command line interface/client, go check out the CLI/client now to see just how LODRefine is calling up the reconciliation service.
 ![Google Refine Reconciliation in Progress](../Images/GoogleRefineReconInProgress.png "Google Refine Reconciliation in Progress")
 
-23. If you got results like seen below, then HOORAY YOU'RE READY TO GO. If you didn't, get in touch with [Christina](mailto:cmharlow@gmail.com).
+23. If you got results like seen below, then HOORAY YOU'RE READY TO GO. If you didn't, get in touch with [Christina](mailto:cmh329@cornell.edu).
 ![Google Refine LCSH Recon Results](../Images/GoogleRefineLCSHReconResults.png "Google Refine LCSH Recon Results")
 
 In between now and the workshop, please do feel free to play around with the DERI RDF extension - either the reconciliation options we checked above, or the 'edit RDF skeleton' functions. You don't need to understand what they are doing; we'll dig into that in the workshop.
 
 Next step: Go check out the [optional preparation](OptionalPrep.md) now, or relax until workshop day.
 
+---
+
 Questions? Get in touch with [Christina](mailto:cmharlow@gmail.com).
 
 [Back to the Metadata Cleaning Agenda](../)
 
-[Back to the LODLAM Workshop Agenda](https://github.com/LODLAM/LODLAMTO16)
+[Back to the LODLAM Toronto Agenda](https://github.com/LODLAM/LODLAMTO16)

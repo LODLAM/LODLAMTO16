@@ -1,10 +1,10 @@
 # LODLAM Workshop: Metadata Cleaning Portion Installation Instructions
 ## Optional Installations
 
-The following is optional for the workshop. If you want to work with reconciliation services in OpenRefine, I strongly recommend you get the Python local reconciliation service requirements installed (section 2) and run the test. 
+The following is entirely and utterly optional for the workshop. If you want to work with reconciliation services in OpenRefine, I strongly recommend you get the Python local reconciliation service requirements installed (section 2) and run the test.
 
 ### 1. RDF Editors
-What we create in the process of this workshop will be a RDF document that you might want to see how it looks outside of LODRefine. 
+What we create in the process of this workshop will be a RDF document that you might want to see how it looks outside of LODRefine.
 
 If you just want a nice editor for reviewing & basic edits of RDF:
 
@@ -16,20 +16,20 @@ If you just want a nice editor for reviewing & basic edits of RDF:
 ### 2. Python Local Reconciliation Service Requirements
 If you are interested in running many/more of the reconciliation service functions we'll see (whether they leverage Linked Open Data or not), install the following.
 
-This can be move involved installation-wise, so please don't hesitate to ask [Christina](mailto:cmharlow@gmail.com) if you have questions. We can also take a lunch or coffee break at DLF if necessary to debug this.
+This can be more involved installation-wise, so please don't hesitate to ask [Christina](mailto:cmh329@cornell.edu) if you have questions.
 
 #### Installation
 **Python**
-Install or ensure that you have at least python 2.7 installed on your computer. 
+Install or ensure that you have at least python 2.7 installed on your computer. Python 3 is problematic.
 
-You can check if your computer has python installed by going to your command line interface or client (standard on a Mac is Terminal, on Windows, the Command Prompt; if you have Linux, I'm assuming you know how to make Linux work), then type in 'python --version'. If it gives you a response such as 'Python 2.7.10', you're good to move on. If it doesn't, the Python beginner's documentation is your friend: https://wiki.python.org/moin/BeginnersGuide/Download
+You can check if your computer has Python installed by going to your command line interface or client (standard on a Mac is Terminal, on Windows, the Command Prompt; if you have Linux, I'm assuming you know how to make Linux work), then type in 'python --version'. If it gives you a response such as 'Python 2.7.10', you're good to move on. If it doesn't, the Python beginner's documentation is your friend: https://wiki.python.org/moin/BeginnersGuide/Download
 
 **Pip**
 Different LODRefine reconciliation services built in Python require different Python libraries to run (although there are a number of libraries that are pretty standard across services). Because you this, you probably want a Python package manager like Pip to easily handle installing requirements. This should come automatically with Python 2.7.9 and later.
 
-You can check if your computer has pip installed by going to your command line interface or client, then type in 'pip --version'. If it gives you a response such as 'pip 7.1.2 from /usr/local/lib/python2.7/site-packages (python 2.7)', you're good to move on. 
+You can check if your computer has pip installed by going to your command line interface or client, then type in 'pip --version'. If it gives you a response such as 'pip 7.1.2 from /usr/local/lib/python2.7/site-packages (python 2.7)', you're good to move on.
 
-If it doesn't, the Pip insatllation documentation is your friend: https://pip.pypa.io/en/latest/installing/
+If it doesn't, the Pip installation documentation is your friend: https://pip.pypa.io/en/latest/installing/
 
 #### Test
 Try either git cloning or downloading this OpenRefine reconciliation service and running through the instructions: https://github.com/cmh2166/geonames-reconcile
@@ -50,8 +50,10 @@ The above will install a LDF Server locally. If you'd like to then push that LDF
 
 We can then make this a possible clinic session.
 
-Questions? Get in touch with [Christina](mailto:cmharlow@gmail.com).
+---
 
-[Back to the Metadata Cleaning Agenda](../)
+Questions? Get in touch with [Christina](mailto:cmh329@cornell.edu).
 
-[Back to the LODLAM Workshop Agenda](https://github.com/LODLAM/LODLAMTO16)
+[Back to the Metadata Workshop Agenda](../)
+
+[Back to the LODLAM Toronto Agenda](https://github.com/LODLAM/LODLAMTO16)

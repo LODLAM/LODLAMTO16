@@ -1,6 +1,6 @@
 #LODLAM Workshop: Metadata Cleaning Portion Installation Instructions
 ##Workshop Preparation
-This tutorial will primarily work with **OpenRefine** with the **DERI RDF Extension** or **LODRefine** (Linked Open Data OpenRefine) installed. OpenRefine requires Java (see note in OpenRefine Installation instructions) and a web browser to run in (**Not Internet Explorer**).
+This tutorial will primarily work with **OpenRefine with the DERI RDF Extension** or **LODRefine** (Linked Open Data OpenRefine) installed. OpenRefine requires **Java** (see note in OpenRefine Installation instructions) and a web browser to run in (**Not Internet Explorer**).
 
 ####OpenRefine Installation Paths:
 
@@ -19,4 +19,8 @@ If you have any issues with the following, please do not hesitate to contact Chr
 
 ---
 
-[Back to the LODLAM Workshop Agenda](https://github.com/LODLAM/LODLAMTO16)
+Questions? Get in touch with [Christina](mailto:cmh329@cornell.edu).
+
+[Back to the Workshop Agenda](../)
+
+[Back to the LODLAM Toronto Agenda](https://github.com/LODLAM/LODLAMTO16)

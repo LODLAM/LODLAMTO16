@@ -7,8 +7,7 @@ Here are some resources and groups that can help with OpenRefine installation is
 
 1. Owen Stephens' *Installing OpenRefine* [Recording](https://summit.uwaterloo.ca/p389l6kkluv/) and [Slides](http://www.mashcat.info/wp-content/uploads/2016/01/Installing-OpenRefine.pptx)
 2. [OpenRefine 2.6 Official Installation Instructions](https://github.com/OpenRefine/OpenRefine/wiki/Installation-Instructions)
-3. [OpenRefine Google Group](https://groups.google.com/forum/#!forum/openrefine
-)
+3. [OpenRefine Google Group](https://groups.google.com/forum/#!forum/openrefine)
 
 ###Java Requirements
 OpenRefine is built in Java. You will need “Java SE Runtime Environment” (or JRE) installed - or check that you have the right version installed. *Generally*, 1.7 or 1.8 works.
@@ -26,6 +25,6 @@ There are 3 options for getting what you need onto your computer. Just choose 1.
 
 Questions? Get in touch with [Christina](mailto:cmh329@cornell.edu).
 
-[Back to the Metadata Cleaning Agenda](../)
+[Back to the Workshop Agenda](../README.md)
 
-[Back to the LODLAM Workshop Agenda](https://github.com/LODLAM/LODLAMTO16)
+[Back to the LODLAM Toronto Agenda](https://github.com/LODLAM/LODLAMTO16)

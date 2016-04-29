@@ -18,6 +18,6 @@ If you want to try a cloud-based version, you can get a free month trial to Refi
 
 Questions? Get in touch with [Christina](mailto:cmh329@cornell.edu).
 
-[Back to the OpenRefine Installation](../OpenRefineInstallation.md)
+[Back to the Installation Page](../OpenRefineInstallation.md)
 
-[Back to the LODLAM Workshop Agenda](https://github.com/LODLAM/LODLAMTO16)
+[Back to the LODLAM Toronto Agenda](https://github.com/LODLAM/LODLAMTO16)
