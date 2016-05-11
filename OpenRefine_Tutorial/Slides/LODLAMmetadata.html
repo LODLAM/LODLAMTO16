@@ -11,7 +11,7 @@
       @font-face {
         font-family: 'Cutive Mono';
         font-style: normal;
-        font-weight: normal;
+        font-weight: strong;
         src: local('Cutive Mono'), url(./fonts/Cutive_Mono.woff2) format('woff2');
       }
       @font-face {
@@ -139,11 +139,10 @@
   <body>
     <textarea id="source">
 class: center middle
-#Going from Theory to Practice:
-###Preparing + Leveraging LOD with OpenRefine
-**Christina Harlow, @cm_harlow**
-
-**LODLAM Toronto 2016**
+#Theory to Practice:
+###Linked Open Data with OpenRefine
+####Christina Harlow, @cm_harlow
+####LODLAM Toronto 2016
 
 ---
 class: center middle
@@ -153,41 +152,41 @@ https://github.com/LODLAM/LODLAMTO16
 
 ---
 class: center middle
-## Quick Installation Backup
+## Installation Backup
 
-Want to follow along, but don't have OpenRefine installed?
-
-Go to Installation instructions &amp; follow RefinePro options.
+**Go to Installation instructions &amp; follow RefinePro options.**
 
 ---
 class: middle
-## Agenda/Method
+## Agenda
 
 1. Introduction
-2. Importing Data
-3. Data Munging
-4. Reconciliation
-5. Mapping, Exporting
-6. Wrap-up
+2. Sample Project
+3. Importing XML Data
+4. Data Munging
+5. Reconciliation
+6. Mapping &amp; Exporting RDF
+7. Wrap-up
 
 ---
 class: middle
 ## Quick Introduction
 
-1. Introduction &lt;==
-2. Importing Data
-3. Data Munging
-4. Reconciliation
-5. Mapping, Exporting
-6. Wrap-up
+1. **Introduction &lt;==**
+2. Sample Project
+3. Importing XML Data
+4. Data Munging
+5. Reconciliation
+6. Mapping &amp; Exporting RDF
+7. Wrap-up
 
 ---
 class: center middle
 ## Learning LOD by Working with LOD
 
-Goal: Learn Linked Open Data by working with it in context of Libraries, Archives, &amp; Museums metadata
+**Goal:** Learn Linked Open Data by working with it in context of Libraries, Archives, &amp; Museums metadata
 
-Help: Raise Hand, Ask Friend, Check Instructions, Check online
+**Need Help:** Raise Hand, Ask Friend, Review Instructions, Check Online
 
 ---
 class: center middle
@@ -197,16 +196,14 @@ class: center middle
 
 ---
 class: middle
-## But Also...
-
-"Hacker School Rules"
+## "Hacker School Rules"
 
 - No feigning surprise
 - No well-actually's
 - No back-seat driving
 - No subtle -isms
 
-<small>https://www.recurse.com/manual</small>
+https://www.recurse.com/manual
 
 ---
 class: middle
@@ -214,29 +211,27 @@ class: middle
 
   * OpenRefine = power data tool
   * Since 2012, community-sourced
-  * OpenRefine.org
-  * github.com/OpenRefine/Openrefine
-  * Java (&amp; Jetty) tool that runs locally
-  * GUI runs in your chosen browser (NOT INTERNET EXPLORER)
+  * [OpenRefine.org](http://www.openrefine.org)
+  * [github.com/OpenRefine/Openrefine](http://github.com/OpenRefine/Openrefine)
+  * Java (&amp; Jetty) app running locally
+  * GUI runs in your chosen browser (**NOT INTERNET EXPLORER**)
+
+---
+class: center middle
+## **☆ NOT ☆**
+## **☆ INTERNET ☆**
+## **☆ EXPLORER ☆**
 
 ---
 class: middle
 ## OpenRefine &amp; RDF
 
-  * Native support for importing RDF/XML, RDF Ntriples
+  * Native support for importing RDF/XML, N-Triples
   * Original Freebase Extension
   * DERI RDF Extension, LODRefine
-    * RDF Document Reconciliation
+    * RDF &amp; SPARQL Reconciliation
     * RDF Skeleton, Mapping
-    * RDF Export: RDF/XML, RDF Turtle
-
----
-class: center middle
-## DERI RDF Extension &amp; LODRefine
-###No longer actively supported
-Each annoyance re:slowness, bugs = 1
-
-If reaches 30, we promise to learn Java + become LODRefine committers
+    * RDF Export: RDF/XML, Turtle
 
 ---
 class: middle
@@ -244,12 +239,88 @@ class: middle
 
 Using RDF data &amp; tools like OpenRefine = better entity matching
 
-Possible Influences:
+Possible Influences/Related Tools:
 
   * [VIVO Recon Service](https://wiki.duraspace.org/display/VIVO/Extending+Google+Refine+for+VIVO)
   * [Nomenklatura](http://nomenklatura.okfnlabs.org/)
   * [Ecco!](https://linkedjazz.org/tools/ecco/)
-  * Karma
+  * [Karma](http://usc-isi-i2.github.io/karma/)
+
+---
+class: center middle
+## DERI RDF Extension &amp; LODRefine
+###!!! No longer actively supported !!!
+Each complaint re:slowness, bugs = 1
+
+If we reach 30, we all will learn Java + maintain our own tools
+
+---
+class: middle
+## Our Sample Project
+
+1. Introduction
+2. **Sample Project &lt;==**
+3. Importing XML Data
+4. Data Munging
+5. Reconciliation
+6. Mapping &amp; Exporting RDF
+7. Wrap-up
+
+---
+class: middle
+## Fedora 3 => Fedora 4
+
+Options:
+
+1. Importing sample DC/XML metadata to make into PCDM RDF
+2. Import your own metadata &amp; DIY it
+
+---
+class: middle
+## DLXS XML to PCDM RDF
+
+[**DLXS** = Digital Library Extension Service](http://www.dlxs.org/)
+
+[**PCDM** = Portland Common Data Modeling](https://github.com/duraspace/pcdm)
+
+From a Live Fedora 4 Migration
+
+---
+class: middle
+## DLXS Structure
+
+
+
+---
+class: middle
+## PCDM Structure
+
+
+---
+class: middle
+## Metadata Mapping
+
+```
+/record/ENCODINGDESC/EDITORIALDECL/P: 1152/1152 | 100%
+             /record/FILEDESC/EXTENT: 1151/1152 |  99%
+     /record/FILEDESC/NOTESSTMT/NOTE:  904/1152 |  78%
+/record/FILEDESC/PUBLICATIONSTMT/IDNO: 1151/1152 |  99%
+/record/FILEDESC/PUBLICATIONSTMT/PUBLISHER: 1151/1152 |  99%
+/record/FILEDESC/PUBLICATIONSTMT/PUBPLACE: |======================== |   1151/1152 |  99%
+ /record/FILEDESC/SERIESSTMT/TITLE/A: |======================== |   1151/1152 |  99%
+/record/FILEDESC/SOURCEDESC/BIBL/AUTHOR: |======================== |   1126/1152 |  97%
+/record/FILEDESC/SOURCEDESC/BIBL/DATE: |======================== |   1151/1152 |  99%
+/record/FILEDESC/SOURCEDESC/BIBL/PUBLISHER: |======================== |   1151/1152 |  99%
+/record/FILEDESC/SOURCEDESC/BIBL/PUBPLACE: |======================== |   1151/1152 |  99%
+/record/FILEDESC/SOURCEDESC/BIBL/TITLE: |======================== |   1151/1152 |  99%
+   /record/FILEDESC/TITLESTMT/AUTHOR: |======================== |   1127/1152 |  97%
+    /record/FILEDESC/TITLESTMT/TITLE: |=========================|   1152/1152 | 100%
+       /record/PROFILEDESC/TEXTCLASS: |                         |      1/1152 |   0%
+/record/PROFILEDESC/TEXTCLASS/KEYWORDS/TERM: |======================== |   1151/1152 |  99%
+  /record/TEXT/BODY/DIV1/DIV2/AUTHOR: |=======================  |   1074/1152 |  93%
+   /record/TEXT/BODY/DIV1/DIV2/TITLE: |=======================  |   1082/1152 |  93%
+         /record/TEXT/BODY/DIV1/HEAD: |=========================|   1152/1152 | 100%
+```
 
 ---
 class: middle
@@ -261,15 +332,6 @@ class: middle
 4. Reconciliation
 5. Mapping, Exporting
 6. Wrap-up
-
----
-class: middle
-## Importing Data
-
-2 'tracks' for this workshop:
-
-1. Import sample DC/XML metadata to make into RDF (taken directly from a Fedora 3 to Fedora 4 migration project)
-3. Import your own data &amp; DIY it
 
 ---
 class: middle
