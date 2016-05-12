@@ -11,7 +11,7 @@
       @font-face {
         font-family: 'Cutive Mono';
         font-style: normal;
-        font-weight: normal;
+        font-weight: strong;
         src: local('Cutive Mono'), url(./fonts/Cutive_Mono.woff2) format('woff2');
       }
       @font-face {
@@ -139,11 +139,10 @@
   <body>
     <textarea id="source">
 class: center middle
-#Going from Theory to Practice:
-###Preparing + Leveraging LOD with OpenRefine
-**Christina Harlow, @cm_harlow**
-
-**LODLAM Toronto 2016**
+#Theory to Practice:
+###Linked Open Data with OpenRefine
+####Christina Harlow, @cm_harlow
+####LODLAM Toronto 2016
 
 ---
 class: center middle
@@ -153,41 +152,42 @@ https://github.com/LODLAM/LODLAMTO16
 
 ---
 class: center middle
-## Quick Installation Backup
+## Installation Backup
 
-Want to follow along, but don't have OpenRefine installed?
-
-Go to Installation instructions &amp; follow RefinePro options.
+**Go to Installation instructions &amp; follow RefinePro options**
+![unhappy_earnest](img/ErnestNotHappy.jpg "Ernest Not Happy")
 
 ---
 class: middle
-## Agenda/Method
+## Agenda
 
 1. Introduction
-2. Importing Data
-3. Data Munging
-4. Reconciliation
-5. Mapping, Exporting
-6. Wrap-up
+2. Sample Project
+3. Importing XML Data
+4. Data Munging
+5. Reconciliation
+6. Mapping &amp; Exporting RDF
+7. Wrap-up
 
 ---
 class: middle
 ## Quick Introduction
 
-1. Introduction &lt;==
-2. Importing Data
-3. Data Munging
-4. Reconciliation
-5. Mapping, Exporting
-6. Wrap-up
+1. **Introduction &lt;==**
+2. Sample Project
+3. Importing XML Data
+4. Data Munging
+5. Reconciliation
+6. Mapping &amp; Exporting RDF
+7. Wrap-up
 
 ---
 class: center middle
 ## Learning LOD by Working with LOD
 
-Goal: Learn Linked Open Data by working with it in context of Libraries, Archives, &amp; Museums metadata
+**Goal:** Learn Linked Open Data by working with it in context of Libraries, Archives, &amp; Museums metadata
 
-Help: Raise Hand, Ask Friend, Check Instructions, Check online
+**Need Help:** Raise Hand, Ask Friend, Review Instructions, Check Online
 
 ---
 class: center middle
@@ -197,16 +197,14 @@ class: center middle
 
 ---
 class: middle
-## But Also...
-
-"Hacker School Rules"
+## "Hacker School Rules"
 
 - No feigning surprise
 - No well-actually's
 - No back-seat driving
 - No subtle -isms
 
-<small>https://www.recurse.com/manual</small>
+https://www.recurse.com/manual
 
 ---
 class: middle
@@ -214,29 +212,27 @@ class: middle
 
   * OpenRefine = power data tool
   * Since 2012, community-sourced
-  * OpenRefine.org
-  * github.com/OpenRefine/Openrefine
-  * Java (&amp; Jetty) tool that runs locally
-  * GUI runs in your chosen browser (NOT INTERNET EXPLORER)
+  * [OpenRefine.org](http://www.openrefine.org)
+  * [github.com/OpenRefine/Openrefine](http://github.com/OpenRefine/Openrefine)
+  * Java (&amp; Jetty) app running locally
+  * GUI runs in your chosen browser (**NOT INTERNET EXPLORER**)
+
+---
+class: center middle
+## **☆ NOT ☆**
+## **☆ INTERNET ☆**
+## **☆ EXPLORER ☆**
 
 ---
 class: middle
 ## OpenRefine &amp; RDF
 
-  * Native support for importing RDF/XML, RDF Ntriples
-  * Original Freebase Extension
+  * Native importing of RDF/XML, NTriples
+  * Freebase Extension
   * DERI RDF Extension, LODRefine
-    * RDF Document Reconciliation
+    * RDF &amp; SPARQL Reconciliation
     * RDF Skeleton, Mapping
-    * RDF Export: RDF/XML, RDF Turtle
-
----
-class: center middle
-## DERI RDF Extension &amp; LODRefine
-###No longer actively supported
-Each annoyance re:slowness, bugs = 1
-
-If reaches 30, we promise to learn Java + become LODRefine committers
+    * RDF Export: RDF/XML, Turtle
 
 ---
 class: middle
@@ -244,32 +240,94 @@ class: middle
 
 Using RDF data &amp; tools like OpenRefine = better entity matching
 
-Possible Influences:
+Possible Influences/Related Tools:
 
   * [VIVO Recon Service](https://wiki.duraspace.org/display/VIVO/Extending+Google+Refine+for+VIVO)
   * [Nomenklatura](http://nomenklatura.okfnlabs.org/)
   * [Ecco!](https://linkedjazz.org/tools/ecco/)
-  * Karma
+  * [Karma](http://usc-isi-i2.github.io/karma/)
+
+---
+class: center middle
+## DERI RDF Extension &amp; LODRefine
+###!!! No longer actively supported !!!
+Each complaint re:slowness, bugs = 1
+
+If we reach 30, we all will learn Java + maintain our own tools
+
+---
+class: middle
+## Our Sample Project
+
+1. Introduction
+2. **Sample Project &lt;==**
+3. Importing XML Data
+4. Data Munging
+5. Reconciliation
+6. Mapping &amp; Exporting RDF
+7. Wrap-up
+
+---
+class: middle
+## Fedora 3 => Fedora 4
+
+1. Importing sample DC/XML metadata to make into PCDM RDF
+2. Import your own metadata &amp; DIY it
+
+---
+class: middle
+## DLXS XML to PCDM RDF
+
+[**DLXS** = Digital Library Extension Service](http://www.dlxs.org/)
+
+[**PCDM** = Portland Common Data Modeling](https://github.com/duraspace/pcdm)
+
+From a Live Fedora 4 Migration
+
+---
+class: middle right
+### The DLXS Past
+<img src="img/DLXS.jpg" width="100%">
+
+
+---
+class: middle
+### The PCDM Future *In Flux*
+<img src="img/CUL_PCDM.jpg" width="100%">
+
+---
+class: middle
+## Metadata Mapping
+
+```
+       /record/ENCODINGDESC/EDITORIALDECL/P: 124/124 | 100%
+                    /record/FILEDESC/EXTENT: 124/124 | 100%
+      /record/FILEDESC/PUBLICATIONSTMT/IDNO: 124/124 | 100%
+ /record/FILEDESC/PUBLICATIONSTMT/PUBLISHER: 124/124 | 100%
+  /record/FILEDESC/PUBLICATIONSTMT/PUBPLACE: 124/124 | 100%
+    /record/FILEDESC/SOURCEDESC/BIBL/AUTHOR: 124/124 | 100%
+      /record/FILEDESC/SOURCEDESC/BIBL/DATE: 124/124 | 100%
+      /record/FILEDESC/SOURCEDESC/BIBL/NOTE: 124/124 | 100%
+ /record/FILEDESC/SOURCEDESC/BIBL/PUBLISHER: 124/124 | 100%
+  /record/FILEDESC/SOURCEDESC/BIBL/PUBPLACE: 124/124 | 100%
+     /record/FILEDESC/SOURCEDESC/BIBL/TITLE: 124/124 | 100%
+          /record/FILEDESC/TITLESTMT/AUTHOR: 124/124 | 100%
+           /record/FILEDESC/TITLESTMT/TITLE: 124/124 | 100%
+/record/PROFILEDESC/TEXTCLASS/KEYWORDS/TERM: 124/124 | 100%
+                /record/TEXT/BODY/DIV1/HEAD: 124/124 | 100%
+```
 
 ---
 class: middle
 ## Importing Data
 
 1. Introduction
-2. Importing Data &lt;==
-3. Data Munging
-4. Reconciliation
-5. Mapping, Exporting
-6. Wrap-up
-
----
-class: middle
-## Importing Data
-
-2 'tracks' for this workshop:
-
-1. Import sample DC/XML metadata to make into RDF (taken directly from a Fedora 3 to Fedora 4 migration project)
-3. Import your own data &amp; DIY it
+2. Sample Project
+3. **Importing XML Data &lt;==**
+4. Data Munging
+5. Reconciliation
+6. Mapping &amp; Exporting RDF
+7. Wrap-up
 
 ---
 class: middle
@@ -281,6 +339,15 @@ class: middle
 4. Enter the URL for GitHub Raw Object of Starter Dataset you want to use
 
 (Or download/save your metadata to working environment &amp; use 'This Computer')
+
+---
+class: middle
+## Import Your Data
+
+Go ahead and import the data for this workshop:
+**OpenRefine_Tutorial/Data/ Toronto_examples/hunt.xml**
+
+Bonus: Once your main project is created, export one of the sample RDF documents to see how it looks as an OpenRefine project. This differs from what the DERI extension expects.
 
 ---
 class: middle
@@ -296,30 +363,24 @@ class: middle
 ---
 class: middle
 ## Viewing OpenRefine Project
-* Saved Automatically with Undo / Redo Panel
-* Rows/Records divide = VERY IMPORTANT
-* Extensions, Export Options in Top Right Corner
+* Saved Automatically
+* Undo / Redo Panel
+* Rows/Records == VERY IMPORTANT
+* Extensions, Export Options in Top Right
 * Facet, Filter panel on left
 * If something freezes, refresh the browser (gahhhh)
-
----
-class: middle
-## Import Your Data
-
-Go ahead and import the data for the track you'd like to pursue. Explore the possible options.
-
-Bonus: Once your main project is created, export one of the sample RDF documents to see how it looks as an OpenRefine project. This differs from what the DERI extension expects.
 
 ---
 class: middle
 ## Data Munging
 
 1. Introduction
-2. Importing Data
-3. Data Munging &lt;==
-4. Reconciliation
-5. Mapping, Exporting
-6. Wrap-up
+2. Sample Project
+3. Importing XML Data
+4. **Data Munging &lt;==**
+5. Reconciliation
+6. Mapping &amp; Exporting RDF
+7. Wrap-up
 
 ---
 class: middle
@@ -331,13 +392,13 @@ Ways to Normalize, Remediate Data:
 * Faceting, Clustering, Filtering
 * Google Refine Expression Language (GREL)
 
-<small>https://github.com/OpenRefine/OpenRefine/wiki</small>
+[github.com/OpenRefine/OpenRefine/wiki](http://github.com/OpenRefine/OpenRefine/wiki)
 
 ---
 class: middle
 ## Prepare Your Data
 
-* Get columns renamed as needed
+* Get columns renamed as reviewed, mapped
 * Get cells joined
 * Facet, review
 * Facet, cluster, normalize
@@ -348,11 +409,12 @@ class: middle
 ## Reconciliation
 
 1. Introduction
-2. Importing Data
-3. Data Munging
-4. Reconciliation &lt;==
-5. Mapping, Exporting
-6. Wrap-up
+2. Sample Project
+3. Importing XML Data
+4. Data Munging
+5. **Reconciliation &lt;==**
+6. Mapping &amp; Exporting RDF
+7. Wrap-up
 
 ---
 
@@ -389,12 +451,13 @@ class: middle
 * [Languages via RDF Doc](../Instructions/Reconciliation/deriRDFexample.md)
 * [Geonames via Recon Service](https://github.com/cmh2166/geonames-reconcile)
 * [VIAF hosted service](http://refine.codefork.com/)
+* [LCSH and LCNAF hosted service](https://github.com/cmh2166/lc-reconcile)
 
 ---
 class: middle
 ## OpenRefine Recon
 
-1. Run Recon according to your choosing - see options in Recon instructions
+1. Run Recon according to your choosing - see options in Recon instructions, links
 2. Pull URIs for a particular field
 3. Pull other information helpful for your projects
 4. Make sure to pull in URIs, information
@@ -404,11 +467,12 @@ class: middle
 ## Mapping &amp; Exporting RDF
 
 1. Introduction
-2. Importing Data
-3. Data Munging
-4. Reconciliation
-5. Mapping, Exporting &lt;==
-6. Wrap-up
+2. Sample Project
+3. Importing XML Data
+4. Data Munging
+5. Reconciliation
+6. **Mapping &amp; Exporting RDF &lt;==**
+7. Wrap-up
 
 ---
 class: middle
@@ -424,6 +488,32 @@ RDF Extension button > Edit RDF Skeleton...
 
 ---
 class: middle
+## Classes &amp; Predicates...
+
+* What class of PCDM does this description belong to?
+    * PCDM:Collection
+    * PCDM:Object Work or Part
+    * PCDM:Fileset
+    * PCDM:File
+    * Context Class?
+* Do the domain &amp; range of your predicates work?
+* It can be helpful to rename columns in this effort
+
+---
+class: middle
+## Classes &amp; Predicates Help
+
+* [PCDM Namespace RDF](https://raw.githubusercontent.com/duraspace/pcdm/master/models.rdf)
+* [PCDM Docs](https://github.com/duraspace/pcdm/wiki)
+* [DCMI Docs](http://wiki.dublincore.org/index.php/User_Guide/Publishing_Metadata)
+* [EDM Docs](http://pro.europeana.eu/files/Europeana_Professional/Share_your_data/Technical_requirements/EDM_Documentation/EDM_Mapping_Guidelines_v2.3_042016.pdf)
+* [EDM Namespace RDF](https://raw.githubusercontent.com/europeana/corelib/master/corelib-edm-definitions/src/main/resources/eu/rdf/edm.owl)
+* [DPLA Docs](http://dp.la/info/wp-content/uploads/2015/03/MAPv4.pdf)
+* [CUL Mappings so far](https://docs.google.com/spreadsheets/d/1SV2hP1tKQpPQrI1cEBWgx6NyO56YhjUCkOD_vxrzlEQ/edit?usp=sharing)
+* [Variety of Mappings](https://docs.google.com/spreadsheets/d/1FL15HSy0d_Mb6I3r7vjH8yEMkkRCJJkiqOt42Khl8ss/edit#gid=0)
+
+---
+class: middle
 ## Map &amp; Export
 
 Map your data to RDF using the RDF skeleton, preview the Turtle, then export when you're ready.
@@ -435,17 +525,18 @@ class: middle
 ## Wrap-Up
 
 1. Introduction
-2. Importing Data
-3. Data Munging
-4. Reconciliation
-5. Mapping, Exporting
-6. Wrap-up &lt;==
+2. Sample Project
+3. Importing XML Data
+4. Data Munging
+5. Reconciliation
+6. Mapping &amp; Exporting RDF
+7. **Wrap-up &lt;==**
 
 ---
 class: middle center
 ## Links + Contact
 
-cmharlow@gmail.com
+cmh329@cornell.edu
 
 http://openrefine.org/
 
