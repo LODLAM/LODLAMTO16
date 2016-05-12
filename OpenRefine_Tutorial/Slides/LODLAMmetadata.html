@@ -300,30 +300,21 @@ class: middle
 ## Metadata Mapping
 
 ```
-       HEADER/ENCODINGDESC/EDITORIALDECL/P: 2713/2713 | 100%
-         HEADER/FILEDESC/EDITIONSTMT/EDITION: 60/2713 |   2%
-                    HEADER/FILEDESC/EXTENT: 2712/2713 |  99%
-             HEADER/FILEDESC/NOTESSTMT/NOTE: 625/2713 |  23%
-      HEADER/FILEDESC/PUBLICATIONSTMT/IDNO: 2712/2713 |  99%
- HEADER/FILEDESC/PUBLICATIONSTMT/PUBLISHER: 2712/2713 |  99%
-  HEADER/FILEDESC/PUBLICATIONSTMT/PUBPLACE: 2712/2713 |  99%
-        HEADER/FILEDESC/SERIESSTMT/TITLE/A: 2712/2713 |  99%
-    HEADER/FILEDESC/SOURCEDESC/BIBL/AUTHOR: 2675/2713 |  98%
-      HEADER/FILEDESC/SOURCEDESC/BIBL/DATE: 2712/2713 |  99%
- HEADER/FILEDESC/SOURCEDESC/BIBL/PUBLISHER: 2712/2713 |  99%
-  HEADER/FILEDESC/SOURCEDESC/BIBL/PUBPLACE: 2712/2713 |  99%
-     HEADER/FILEDESC/SOURCEDESC/BIBL/TITLE: 2712/2713 |  99%
-          HEADER/FILEDESC/TITLESTMT/AUTHOR: 2676/2713 |  98%
-           HEADER/FILEDESC/TITLESTMT/TITLE: 2713/2713 | 100%
-                 HEADER/PROFILEDESC/TEXTCLASS: 1/2713 |   0%
-HEADER/PROFILEDESC/TEXTCLASS/KEYWORDS/TERM: 2712/2713 |  99%
-           TEXT/BODY/DIV1/DIV2/HEAD/AUTHOR: 2205/2713 |  81%
-            TEXT/BODY/DIV1/DIV2/HEAD/TITLE: 2702/2713 |  99%
-                      TEXT/BODY/DIV1/DIV2/P: 106/2713 |   3%
-                   TEXT/BODY/DIV1/DIV2/P/P: 2701/2713 |  99%
-                       TEXT/BODY/DIV1/HEAD: 2713/2713 | 100%
-                           TEXT/BODY/DIV1/P: 300/2713 |  11%
-                        TEXT/BODY/DIV1/P/P: 2680/2713 |  98%
+       /record/ENCODINGDESC/EDITORIALDECL/P: 124/124 | 100%
+                    /record/FILEDESC/EXTENT: 124/124 | 100%
+      /record/FILEDESC/PUBLICATIONSTMT/IDNO: 124/124 | 100%
+ /record/FILEDESC/PUBLICATIONSTMT/PUBLISHER: 124/124 | 100%
+  /record/FILEDESC/PUBLICATIONSTMT/PUBPLACE: 124/124 | 100%
+    /record/FILEDESC/SOURCEDESC/BIBL/AUTHOR: 124/124 | 100%
+      /record/FILEDESC/SOURCEDESC/BIBL/DATE: 124/124 | 100%
+      /record/FILEDESC/SOURCEDESC/BIBL/NOTE: 124/124 | 100%
+ /record/FILEDESC/SOURCEDESC/BIBL/PUBLISHER: 124/124 | 100%
+  /record/FILEDESC/SOURCEDESC/BIBL/PUBPLACE: 124/124 | 100%
+     /record/FILEDESC/SOURCEDESC/BIBL/TITLE: 124/124 | 100%
+          /record/FILEDESC/TITLESTMT/AUTHOR: 124/124 | 100%
+           /record/FILEDESC/TITLESTMT/TITLE: 124/124 | 100% 
+/record/PROFILEDESC/TEXTCLASS/KEYWORDS/TERM: 124/124 | 100%
+                /record/TEXT/BODY/DIV1/HEAD: 124/124 | 100%
 ```
 
 ---
@@ -496,6 +487,31 @@ RDF Extension button > Edit RDF Skeleton...
 
 ---
 class: middle
+## Classes &amp; Predicates...
+
+* What class of PCDM does this description belong to?
+    * PCDM:Collection
+    * PCDM:Object Work or Part
+    * PCDM:Fileset
+    * PCDM:File
+    * Context Class?
+* Do the domain &amp; range of your predicates work?
+* It can be helpful to rename columns in this effort
+
+---
+class: middle
+## Classes &amp; Predicates Help
+
+* [PCDM Namespace RDF](https://raw.githubusercontent.com/duraspace/pcdm/master/models.rdf)
+* [PCDM Docs](https://github.com/duraspace/pcdm/wiki)
+* [DCMI Docs](http://wiki.dublincore.org/index.php/User_Guide/Publishing_Metadata)
+* [EDM Docs](http://pro.europeana.eu/files/Europeana_Professional/Share_your_data/Technical_requirements/EDM_Documentation/EDM_Mapping_Guidelines_v2.3_042016.pdf)
+* [EDM Namespace RDF](https://raw.githubusercontent.com/europeana/corelib/master/corelib-edm-definitions/src/main/resources/eu/rdf/edm.owl)
+* [DPLA Docs](http://dp.la/info/wp-content/uploads/2015/03/MAPv4.pdf)
+* [CUL Mappings so far](https://docs.google.com/spreadsheets/d/1FL15HSy0d_Mb6I3r7vjH8yEMkkRCJJkiqOt42Khl8ss/edit#gid=0)
+
+---
+class: middle
 ## Map &amp; Export
 
 Map your data to RDF using the RDF skeleton, preview the Turtle, then export when you're ready.
@@ -507,17 +523,18 @@ class: middle
 ## Wrap-Up
 
 1. Introduction
-2. Importing Data
-3. Data Munging
-4. Reconciliation
-5. Mapping, Exporting
-6. Wrap-up &lt;==
+2. Sample Project
+3. Importing XML Data
+4. Data Munging
+5. Reconciliation
+6. Mapping &amp; Exporting RDF
+7. **Wrap-up &lt;==**
 
 ---
 class: middle center
 ## Links + Contact
 
-cmharlow@gmail.com
+cmh329@cornell.edu
 
 http://openrefine.org/
 
