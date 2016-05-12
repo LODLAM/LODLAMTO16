@@ -11,7 +11,7 @@ This interactive tutorial will walk you through taking existing metadata, enhanc
 Please have OpenRefine with the DERI RDF Extension *OR* LODRefine installed *OR* access to a RefinePro LODLAM instance before the start of the workshop if you wish to participate in hands-on work. Instructions for installation are available at [Installation](Installation/README.md). If you run into any issues with installation, please get in touch with [me](mailto:cmh329@cornell.edu) as soon as you are able.
 
 ##Agenda
-1. Introduction to OpenRefine: Both Utilizing & Producing RDF
+1. Introduction to OpenRefine
     2. About
     3. Extensions
     4. LODRefine
