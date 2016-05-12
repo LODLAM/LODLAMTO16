@@ -22,7 +22,7 @@ Your screen should look like this:
 
 Then you should see a screen like this:
 
-![Importing data from a URL](../../Images/DataImportScreen.png)
+![Import Review Screen](../../Images/DataImportScreen.png)
 
 This screen is where you target the data you're importing. Depending on the type of data you're importing, you'll need to choose a 'record' delimiter field. OpenRefine uses this to create the records/rows tabular output for the application.
 
